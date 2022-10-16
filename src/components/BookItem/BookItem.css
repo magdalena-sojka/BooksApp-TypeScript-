@@ -2,3 +2,13 @@
   padding: 1rem;
   border-bottom: 1px dashed rgba(105, 127, 238, 0.25);
 }
+
+.button {
+  padding: 10px;
+  background-image: linear-gradient(62deg, #ff4747 0%, #bc3e7f 100%);
+  border: none;
+  color: #fff;
+  border-radius: 1rem;
+  margin: 10px;
+  font: inherit;
+}
