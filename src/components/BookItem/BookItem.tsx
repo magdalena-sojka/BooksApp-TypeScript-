@@ -5,11 +5,11 @@ import './BookItem.css';
 
 type Props = {
   book: Book;
-  removeBook: (book: Book) => void;
+  removeBook: (id: string) => void
 }
 
 const BookItem: FC<Props> = ({ book, removeBook }) => {
-  return (<li className="book-item">{book.title} by {book.author}, ${book.price}<button type="button" onClick={() => removeBook(book)} className="button">Delate</button></li>);
+  return (<li className="book-item">{book.title} by {book.author}, ${book.price}<button type="button" onClick={() => removeBook(book.id)} className="button">Delate</button></li>);
 };
 
 export default BookItem;
